@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'custom-directive';
+  color = 'yellow';
+  images: string[] = ['/assets/book.png', '/assets/download.png','/assets/images.png'];
 }

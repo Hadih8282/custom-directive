@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'custom-directive'`, () => {
+  it(`should have as title 'customdirective'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('custom-directive');
+    expect(app.title).toEqual('customdirective');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('custom-directive app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('customdirective app is running!');
   });
 });
